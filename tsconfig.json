@@ -1,21 +1,12 @@
 {
-  "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "baseUrl": ".",
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "strict": true,
-    "paths": {
-      "@/*": [
-        "./*"
-      ],
-      "@workspace/api-client-react": [
-        "./lib/api-client-react"
-      ]
-    }
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "outDir": "dist"
   },
-  "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    ".expo/types/**/*.ts",
-    "expo-env.d.ts"
-  ]
+  "include": ["src"]
 }
